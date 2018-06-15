@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+}
+.itm {
+    background: #000000; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #000000 15%, #cc20a4 20%, #000000 25%, #000000 41%, #7a7b7c 45%, #cc20a4 50%, #7a7b7c 55%, #000000 58%, #000000 75%, #cc20a4 80%, #000000 85%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #000000 15%,#cc20a4 20%,#000000 25%,#000000 41%,#7a7b7c 45%,#cc20a4 50%,#7a7b7c 55%,#000000 58%,#000000 75%,#cc20a4 80%,#000000 85%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #000000 15%,#cc20a4 20%,#000000 25%,#000000 41%,#7a7b7c 45%,#cc20a4 50%,#7a7b7c 55%,#000000 58%,#000000 75%,#cc20a4 80%,#000000 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin: 5px 0;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.itm img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.checked {
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,85,255,1);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(0,85,255,1);
+    box-shadow: 0px 0px 10px 3px rgba(0,85,255,1);
+}
+.checked img {
+    opacity: 1;
+    transition: opacity 0.1s linear 0s;
+}
+.hide {
+    visibility: hidden;
+}
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+.win {
+    display: none;
+    text-align: center;
+    margin: 100px 0px
+}
+.win h3 {
+    color: green;
+    font-size: 46px;
+}
+.win p {
+    font-size: 26px;
+}
